@@ -28,6 +28,13 @@ const author = document.getElementById("author");
 const job = document.getElementById("job");
 const info = document.getElementById("info");
 
-const prevBtn = document.querrySelector(".prev-btn");
-const nextBtn = document.querrySelector(".next-btn");
-const randomBtn = document.querrySelector(".random-btn");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+const randomBtn = document.querySelector(".random-btn");
+
+let currentItem = 0;
+
+window.addEventListener('DOMContentLoaded', function () {
+ const item = reviews[currentItem];
+ img.src = reviews[currentItem].img
+});
