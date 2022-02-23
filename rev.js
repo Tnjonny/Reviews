@@ -49,4 +49,4 @@ function showPerson(person) {
 nextBtn.addEventListener('click', function () {
     currentItem++;
     showPerson(currentItem);
-})
+});
