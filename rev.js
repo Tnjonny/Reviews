@@ -11,14 +11,14 @@ const reviews = [
         name: "Jane Smith",
         job: "software developer",
         img: "#",
-        text: "lorem20"
+        text: "lorem15"
     },
     {
         id: 3,
         name: "Jonathan Nkuli",
         job: "Merch Assistant",
         img: "#",
-        text: "lorem20"
+        text: "lorem10"
     }
 ]
 
@@ -48,5 +48,16 @@ function showPerson(person) {
 
 nextBtn.addEventListener('click', function () {
     currentItem++;
+    if (currentItem > reviews.length - 1) { // -1 reflects last item in array
+        currentItem = 0;
+    }
+    showPerson(currentItem);
+});
+
+prevBtn.addEventListener('click', function () {
+    currentItem--;
+    if (currentItem < 0) { // -1 reflects last item in array
+        currentItem = reviews.length - 1;
+    }
     showPerson(currentItem);
 });
