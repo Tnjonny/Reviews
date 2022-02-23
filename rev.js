@@ -19,7 +19,15 @@ const reviews = [
         job: "Merch Assistant",
         img: "#",
         text: "lorem10"
+    },
+    {
+        id: 4,
+        name: "Caitlin Nkuli",
+        job: "Sales Assistant",
+        img: "#",
+        text: "lorem5"
     }
+
 ]
 
 
@@ -61,3 +69,13 @@ prevBtn.addEventListener('click', function () {
     }
     showPerson(currentItem);
 });
+
+
+randomBtn.addEventListener('click', function () {
+   const ranDom =  getRandomPerson();
+   showPerson(ranDom);
+});
+
+function getRandomPerson() {
+    return Math.floor(Math.random() * reviews.length);
+}
