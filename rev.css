@@ -17,8 +17,36 @@ body {
     font-size: 2rem;
 }
 
+.title {
+    margin-bottom: -5rem;
+}
+
+.underline {
+    border: solid #000 2px; 
+    width: 12rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    
+}
+
 .container {
     background-color: rgba(233, 222, 187, 0.979);
-    padding: 10rem 20rem;
-    border-radius: 35%;
+    padding: 5rem 20rem;
+    border-radius: 30%;
+    border: solid #000 2px; 
+}
+
+button {
+    border: solid #000 2px;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    box-shadow: 0 1rem 2rem rgba(#0000, 0.4);
+    font-size: 1.5rem;
+    background-color: rgb(255, 254, 254);
+    cursor: pointer;
+}
+
+
+.random-btn {
+    margin-top: 2rem;
 }
