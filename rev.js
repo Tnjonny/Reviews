@@ -72,10 +72,7 @@ prevBtn.addEventListener('click', function () {
 
 
 randomBtn.addEventListener('click', function () {
-   const ranDom =  getRandomPerson();
+   const ranDom = Math.floor(Math.random() * reviews.length);
    showPerson(ranDom);
 });
 
-function getRandomPerson() {
-    return Math.floor(Math.random() * reviews.length);
-}
